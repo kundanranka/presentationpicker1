@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PICKER</title>
+</head>
+<style type="text/css">
+	.button
+	{
+		background-color: black; 
+  		color: white;
+  		border: none;
+  		padding: 20px 40px;
+  		text-align: center;
+  		text-decoration: none;
+  		font-size: 24px;
+  		transition-duration: 0.4s;
+	}
+
+.button:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+</style>
+<body bgcolor="black">
+<div style="margin-top: 38vh;">
+<center>
+	{%for i in roll%}
+  <p style="color: white; font-size: 140%;">
+    {%for j in i%}
+      {{j}}&nbsp
+    {%endfor%}
+    </p><br><br>
+  {%endfor%}
+</center>
+</div>
+</body>
+</html>

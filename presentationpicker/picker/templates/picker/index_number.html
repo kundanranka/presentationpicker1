@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Picker-Home</title>
+</head>
+<style type="text/css">
+  .button
+  {
+    background-color: black; 
+      color: white;
+      border: none;
+      padding: 20px 40px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      border: 2px solid white;
+      transition-duration: 0.4s;
+  }
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style>
+
+<body bgcolor="black">
+<centre>
+<DIV style="margin-top: 12vh; color: white; font-family: arial; font-size: 18px;"  class="center">
+    <form method="POST">
+      {% csrf_token %}
+        <b>
+        Number Of Students:<br><input type="text" name="num"><br><br>
+      </b>
+      <br><br>
+      <center>
+        <input class="button" type="submit">
+      </center>
+    </form>
+</DIV>
+</centre>
+</body>
+</html>
